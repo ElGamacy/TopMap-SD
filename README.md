@@ -13,7 +13,7 @@ Authors: Mohammad ElGamacy and Luc Van Meervelt.
 
 
 
-Additional odification or custom updates requests are welcome and can
+Additional modification or custom updates requests are welcome and can
 be communicated to the following email address: 
 
 mohammad.elgamacy@vub.ac.be
