@@ -39,6 +39,6 @@ Molecular vectors records are generated in ./outfile.dat
     indication of the computation progress.
 
 Usage:
-# topmap <mol2_input_file[.gz]>
+topmap[.exe] mol2_input_file[.gz]
 
 
