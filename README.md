@@ -4,8 +4,7 @@ TopMap-SD
 A Shape-Distribution-based molecular topology mapping algorithm lineage.
 
 
-The software provided here is described in the work published under the
-title:
+The software provided here is to be described soon in detail under the putative title:
 
 "Comprehensive Relational Topology Analysis of Structurally Characterised Ligands"
 
