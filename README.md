@@ -1,12 +1,13 @@
 TopMap-SD
 =========
 
-A Shape-Distribution-based molecular topology mapping algorithm lineage.
+A Shape-Distribution-based molecular topology mapping algorithm.
 
 
 The software provided here is to be described soon in detail under the putative title:
 
-"Comprehensive Relational Topology Analysis of Structurally Characterised Ligands"
+"A fast topological analysis algorithm for large-scale similarity evaluations for ligands
+and binding pockets"
 
 Authors: Mohammad ElGamacy and Luc Van Meervelt.
 
@@ -40,4 +41,10 @@ Molecular vectors records are generated in ./outfile.dat
 Usage:
 topmap[.exe] mol2_input_file[.gz]
 
+Example
+=======
+
+An example scenario on a dataset from the DUD-E is presented below:
+
+The example will shows the main steps of structural fingerprinting (without any conformational sampling steps) and running a simple search using a random query structure.
 
