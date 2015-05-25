@@ -50,28 +50,27 @@ The example will shows the main steps of structural fingerprinting (without any 
 
 This illustration was made for an Ubuntu system.
 
-step 1:
-# download and extract the zipped package
+# step 1:
+### download and extract the zipped package
 unzip TopMap-SD-master
 
-step 2:
-# fingerprint generation on a linux system
+# step 2:
+### fingerprint generation on a linux system
 cd TopMap-SD-master/TopMap_v0.1linux_x86_64/
-## fiingerprinting actives:
+### fiingerprinting actives:
 ./TopMap_v0.1linux ../../actives_final.mol2 
-## fiingerprinting decoys:
+### fiingerprinting decoys:
 ./TopMap_v0.1linux ../../decoys_final.mol2 
-## contactenate output files:
+### contactenate output files:
 cd ../../
 cat actives_final.dat decoys_final.dat > all_fp.dat
 
 prerequisite:
 Numpy library must be installed (http://www.numpy.org/) for the next step
 
-step 3:
-# calculating dissimilarity and ranking similar molecules to a query
-# and printing out the results to the stdout
-## this calculates the command prints out the names and dissimilarity 
-## scores of top 50 similar hits using the first structure in the 
-## file (i.e. number 1) as query
+# step 3:
+## calculating dissimilarity and ranking similar molecules to a query and printing out the results to the stdout
+### this calculates the command prints out the names and dissimilarity 
+### scores of top 50 similar hits using the first structure in the 
+### file (i.e. number 1) as query
 Python TopMap-SD-master/dssmlrty_cmp_minima.py 1 50 all_fp.dat
