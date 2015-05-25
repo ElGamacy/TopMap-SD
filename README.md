@@ -48,7 +48,7 @@ An example scenario on a dataset from the DUD-E is presented below:
 
 The example will shows the main steps of structural fingerprinting (without any conformational sampling steps) and running a simple search using a random query structure.
 
-This illustration was made for an Ubuntu system.
+This illustration was made for an Ubuntu system. Example mol2 files can be downloaded from any target dataset from the DUD-E (http://dude.docking.org/targets)
 
 # step 1:
 ### download and extract the zipped package
@@ -65,10 +65,10 @@ cd TopMap-SD-master/TopMap_v0.1linux_x86_64/
 cd ../../
 cat actives_final.dat decoys_final.dat > all_fp.dat
 
-prerequisite:
+# prerequisite:
 Numpy library must be installed (http://www.numpy.org/) for the next step
 
 # step 3:
-## calculating dissimilarity and ranking similar molecules to a query and printing out the results to the stdout
+### calculating dissimilarity and ranking similar molecules to a query and printing out the results to the stdout
 ### this calculates the command prints out the names and dissimilarity scores of top 50 similar hits using the first structure in the file (i.e. number 1) as query
 Python TopMap-SD-master/dssmlrty_cmp_minima.py 1 50 all_fp.dat
