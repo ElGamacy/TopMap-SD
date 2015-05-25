@@ -3,8 +3,8 @@ import sys
 import numpy as np
 #import scipy.spatial.distance as dist
 
-##########################
-# atom records extractor #
+#############
+# usage doc #
 ######################################################################
 def usage():
 
