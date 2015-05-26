@@ -69,6 +69,5 @@ cat actives_final.dat decoys_final.dat > all_fp.dat
 Numpy library must be installed (http://www.numpy.org/) for the next step
 
 # step 3:
-### calculating dissimilarity and ranking similar molecules to a query and printing out the results to the stdout
-### this calculates the command prints out the names and dissimilarity scores of top 50 similar hits using the first structure in the file (i.e. number 1) as query
+### calculating dissimilarity and ranking similar molecules to a query and printing out the results to the stdout. this calculates the command prints out the names and dissimilarity scores of top 50 similar hits using the first structure in the file (i.e. number 1) as query
 Python TopMap-SD-master/dssmlrty_cmp_minima.py 1 50 all_fp.dat
