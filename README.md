@@ -63,6 +63,7 @@ cd TopMap-SD-master/TopMap_v0.1linux_x86_64/
 ./TopMap_v0.1linux ../../decoys_final.mol2 
 ### contactenate output files:
 cd ../../
+
 cat actives_final.dat decoys_final.dat > all_fp.dat
 
 # prerequisite:
