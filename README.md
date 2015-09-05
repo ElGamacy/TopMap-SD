@@ -27,15 +27,18 @@ Molecular vectors records are generated in ./outfile.dat
 - Input structural coordinates must be provided in mol2 format
     with the atomic partial charges assigned and preferrably
     exported/reformatted using OpenBabel.
-    Essential records (@<TRIPOS):
+    Essential records (@<TRIPOS>):
+
         - MOLECULE
+
         - ATOM
+
         - BOND
 - Input mol2 files can be input as gzipped (i.e. ".mol2.gz") files
 - Output file contains the molecular descriptor vectors
     in text format (for portability reasons; UTF-8).
 - Output data is flushed after each molecular calculations loop
-    cycle, thus, the output file completeness can provide and
+    cycle, thus, the output file completeness can provide an
     indication of the computation progress.
 
 Usage:
@@ -46,7 +49,7 @@ Example
 
 An example scenario on a dataset from the DUD-E is presented below:
 
-The example will shows the main steps of structural fingerprinting (without any conformational sampling steps) and running a simple search using a random query structure.
+The example shows the main steps of structural fingerprinting (without any conformational sampling steps) and running a simple search using a random query structure.
 
 This illustration was made for an Ubuntu system. Example mol2 files can be downloaded from any target dataset from the DUD-E (http://dude.docking.org/targets)
 
