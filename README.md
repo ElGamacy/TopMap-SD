@@ -27,12 +27,9 @@ Molecular vectors records are generated in ./outfile.dat
 - Input structural coordinates must be provided in mol2 format
     with the atomic partial charges assigned and preferrably
     exported/reformatted using OpenBabel.
-    Essential records (@<TRIPOS>):
-
+    Essential records (@<TRIPOS):
         - MOLECULE
-
         - ATOM
-
         - BOND
 - Input mol2 files can be input as gzipped (i.e. ".mol2.gz") files
 - Output file contains the molecular descriptor vectors
@@ -60,9 +57,9 @@ unzip TopMap-SD-master
 # step 2:
 ### fingerprint generation on a linux system
 cd TopMap-SD-master/TopMap_v0.1linux_x86_64/
-### fiingerprinting actives:
+### fingerprinting actives:
 ./TopMap_v0.1linux ../../actives_final.mol2 
-### fiingerprinting decoys:
+### fingerprinting decoys:
 ./TopMap_v0.1linux ../../decoys_final.mol2 
 ### contactenate output files:
 cd ../../
