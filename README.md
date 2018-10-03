@@ -55,14 +55,11 @@ This illustration was made for an Ubuntu system. Example mol2 files can be downl
 unzip TopMap-SD-master
 
 # step 2:
-### fingerprint generation on a linux system
-cd TopMap-SD-master/TopMap_v0.1linux_x86_64/
 ### fingerprinting actives:
-./TopMap_v0.1linux ../../actives_final.mol2 
+./TopMap_v0.1linux actives_final.mol2 
 ### fingerprinting decoys:
-./TopMap_v0.1linux ../../decoys_final.mol2 
+./TopMap_v0.1linux decoys_final.mol2 
 ### contactenate output files:
-cd ../../
 
 cat actives_final.dat decoys_final.dat > all_fp.dat
 
@@ -70,5 +67,5 @@ cat actives_final.dat decoys_final.dat > all_fp.dat
 Numpy library must be installed (http://www.numpy.org/) for the next step
 
 # step 3:
-### calculating dissimilarity and ranking similar molecules to a query and printing out the results to the stdout. this calculates the command prints out the names and dissimilarity scores of top 50 similar hits using the first structure in the file (i.e. number 1) as query
-Python TopMap-SD-master/dssmlrty_cmp_minima.py 1 50 all_fp.dat
+calculating dissimilarity, sorting similar molecules to a query, and printing out the results to the stdout. This calculates the dissimlarity and prints out the names and dissimilarity scores of the top 50 similar hits using the first structure in the file (i.e. ligand nr. 1) as query:
+python dssmlrty_cmp_minima.py 1 50 all_fp.dat
